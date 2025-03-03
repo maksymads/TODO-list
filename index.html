@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista zadań</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista zadań</h1>
+        
+        <form id="task-form" action="proc.php" method="POST">
+            <input type="text" name="task" placeholder="Wpisz zadanie" required>
+            <select name="category">
+                <option value="Praca">Praca</option>
+                <option value="Osobiste">Osobiste</option>
+                <option value="Nauka">Nauka</option>
+            </select>
+            <button type="submit" name="submit">Dodaj zadanie</button>
+        </form>
+
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
