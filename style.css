@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: #f4f4f4;
-    color: #333;
+    background: #2c2c2c;
+    color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,10 +16,10 @@ body {
 }
 
 .container {
-    background: white;
+    background: #333;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
     width: 100%;
     max-width: 500px;
 }
@@ -65,9 +65,9 @@ ul {
 }
 
 li {
-    background: #f9f9f9;
+    background: #444;
     padding: 15px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #555;
     display: flex;
     justify-content: space-between;
     align-items: center;
