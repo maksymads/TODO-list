@@ -1,10 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "todo_list";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli("localhost", "root", "", "todo_list");
 
 if ($conn->connect_error) {
     die("Błąd połączenia: " . $conn->connect_error);
