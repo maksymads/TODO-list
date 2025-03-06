@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista zadań</title>
+    <title>TODO lista</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Lista zadań</h1>
-        
-        <form id="task-form" action="process-task.php" method="POST">
+        <h1>TODO lista</h1>
+        <form id="task-form">
+            <input type="hidden" name="id" id="task-id">
+            <input type="hidden" name="action" id="action" value="submit">
             <input type="text" name="task" placeholder="Wpisz zadanie" required>
             <select name="category">
                 <option value="Praca">Praca</option>
                 <option value="Osobiste">Osobiste</option>
             </select>
-            <button type="submit" name="submit">Dodaj zadanie</button>
+            <select name="priority">
+                <option value="Niski">Niski</option>
+                <option value="Średni">Średni</option>
+                <option value="Wysoki">Wysoki</option>
+            </select>
+            <input type="datetime-local" name="planned_end_date">
+            <button type="submit" id="submit-btn">Dodaj zadanie</button>
+            <button type="submit" id="edit-btn" style="display: none;">Edytuj zadanie</button>
         </form>
-
         <ul id="task-list"></ul>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
